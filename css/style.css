@@ -62,7 +62,7 @@ header .button_mob_menu{
 	width: 60px;
 	height: 60px;
 	position: absolute;
-	right: 80px;
+	right: 70px;
 	top: 50%;
 	transform: translateY(-50%);
 	border:3px solid #000;
@@ -213,7 +213,7 @@ article .box_news{
 	max-width: 1300px;
 } 
 article .box_news .block_new{
-	max-width: 350px;
+	max-width: 450px;
 	background-color: #fff;
 	border-radius: 5px;
 }
@@ -306,6 +306,322 @@ footer ul{
 	}
 	article .wrapper .about .bg_img{
 		background-size: 235%;
+	}
+	.font-big-title{
+		font-size: 25px;
+	}
+
+}*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	width: 100%;
+}
+body{
+	width: 100%;
+	height: 100vh;
+	background-color: #f0f0f0;
+}
+header{
+	width: 100%;
+	height: 100px;
+	background-color: #fff;
+	display: flex;
+	position: relative;
+	margin-bottom: 35px;
+}
+header .logo, footer .logo{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: bold;
+	padding-left: 10%;
+}
+header ul.menu{
+	height: 30px;
+	display: flex;
+	position: absolute;
+	right: 0;
+	justify-content: space-between;
+	align-items: center;
+	top: 50%;
+	transform: translateY(-50%);	
+	padding-right: 10%;
+}
+header ul.menu li,footer ul li{
+	list-style-type: none;
+	margin-right: 30px;
+	color: #fff;
+}
+header ul.menu li a{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	text-decoration: none;
+	color: #555555;
+	display: block;
+	font-size: 17px;
+}
+header ul.menu li a:hover{
+	color: #000;
+	text-decoration: underline;
+}
+header .button_mob_menu{
+	display: none;
+	background-color: #fff;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	right: 70px;
+	top: 50%;
+	transform: translateY(-50%);
+	border:3px solid #000;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+header .button_mob_menu span{
+	display: block;
+	width: 70%;
+	height: 4px;
+	border-radius: 2px;
+	background-color: #000;
+	position: relative;
+	transition: 2s;
+}
+header .button_mob_menu span::before,
+header .button_mob_menu span::after{
+	content: '';
+	width: 100%;
+	height: 4px;
+	border-radius: 2px;
+	background-color: #000;
+	position: absolute;
+	left: 0;
+	transition:2s;
+}
+header .button_mob_menu span::after{
+	top: 11px;
+}
+header .button_mob_menu span::before{
+	top: -11px;
+}
+.active_button_mob_menu span:before{
+	left:20px !important;
+	top:0 !important;
+	width: 50% !important;
+	transform-origin: right;
+	transform:rotate(30deg);
+}
+.active_button_mob_menu span:after{
+	left:20px !important;
+	top:0 !important;
+	width: 50% !important;
+	transform-origin: right;
+	transform:rotate(-30deg);
+}
+.rotate{
+	transform:rotate(90deg);
+}
+
+header .mob_menu{
+	width: 100%;
+	z-index: 2;
+	transition: 2s;
+	margin-top: 102px;
+	display: none;
+}
+header .mob_menu li{
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 0 0  15px 15px;
+	border-bottom: 1px solid #555555; 
+	text-align: center;
+}
+header .mob_menu li a{
+	font-size: 22px;
+	text-decoration: none;
+	color: #555555;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+header .mob_menu li a:hover{
+	color: #fff;
+	text-decoration: underline;
+}
+header .mob_menu li:hover{
+	border-bottom: 1px solid #fff;
+	background-color: #555555; 
+}
+
+.font-big-title{
+	font-size: 22px;
+	font-weight: bold;
+	color:#000;
+	margin-top: 45px;
+}
+.font-title{
+	font-size: 20px;
+	font-weight: bold;
+	color:#000;
+}
+.font-text{
+	font-size: 16px;
+	color:#000;
+}
+article{
+	width: 100%;
+}
+article .wrapper{
+	width: 80%;
+	margin:0 auto;
+	max-width: 1920px;
+}
+article .wrapper .about{
+	width: 100%;
+	height: 420px;
+	margin-bottom: 50px;
+}
+article .wrapper .about .bg_img{
+	width: 100%;
+	height: 420px;
+	position: absolute;
+	left: 0;
+	background-image: url(../images/bg.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+article .wrapper .about .slider{
+	width: 50%;
+	height: 100%;
+	background-color: #ffffff9c;
+	position: absolute;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+}
+article .wrapper .about .slider p{
+	width: 80%;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+
+article .box_news{
+	display: flex;
+	justify-content: space-between;
+	margin: 25px auto;
+	max-width: 1300px;
+} 
+article .box_news .block_new{
+	max-width: 450px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+article .box_news .block_new img, .box_events .block_event img{
+	width: 100%;
+	height: 200px;
+}
+article .box_news .block_new p, .box_events .block_event p{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+article .box_news .block_new button, .box_events .block_event button{
+	background-color:#000;
+	border: 0;
+	border-radius: 15px;
+	padding: 5px 10px;
+	margin:15px 10px;
+}
+article .box_news .block_new button a, .box_events .block_event button a{
+	text-decoration: none;
+	color:#fff;
+}
+article a.more{
+	text-decoration: none;
+	color:#000;
+	font-size: 18px;
+	border-bottom: 2px dashed #000;
+}
+article a.more:hover{
+	border-bottom: 2px solid #000;
+}
+article .box_events{
+	margin:25px auto;
+	max-width: 1300px;
+}
+article .box_events .block_event{
+	display: flex;
+	background-color:#fff;
+}
+
+
+
+footer{
+	width: 100%;
+	height: 100px;
+	background-color: #000;
+	margin-top: 40px;
+	position: relative;
+}
+footer ul{
+	height: 30px;
+	display: flex;
+	flex-flow: column;
+	position: absolute;
+	right: 0;
+	justify-content: space-between;
+	top: 50%;
+	transform: translateY(-50%);	
+	padding-right: 10%;
+}
+
+
+@media screen and (max-width: 1200px){
+	article .box_news{
+		flex-flow: column;
+		align-items: center;
+	}
+	article .box_news .block_new{
+		margin-top: 30px;
+	}
+	article .box_events .block_event{
+		flex-flow: column;
+	}
+	.font-big-title{
+		text-align: center;
+	}
+}
+@media screen and (max-width: 800px){
+	header{
+		border-bottom: 1px solid #555555;
+	}
+	header ul.menu{
+		display: none;
+	}
+	header .button_mob_menu{
+		display: flex;
+	}
+	article .wrapper .about .slider{
+		width: 100%;
+	}
+	article .wrapper .about .bg_img{
+		background-size: 235%;
+	}
+	.font-big-title{
+		font-size: 25px;
 	}
 
 }
