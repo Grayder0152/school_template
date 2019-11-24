@@ -213,7 +213,7 @@ article .box_news{
 	max-width: 1300px;
 } 
 article .box_news .block_new{
-	max-width: 450px;
+	max-width: 500px;
 	background-color: #fff;
 	border-radius: 5px;
 }
@@ -621,7 +621,7 @@ footer ul{
 		background-size: 235%;
 	}
 	.font-big-title{
-		font-size: 25px;
+		font-size: 30px;
 	}
 
 }
