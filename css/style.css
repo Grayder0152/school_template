@@ -57,6 +57,7 @@ header ul.menu li a:hover{
 	text-decoration: underline;
 }
 header .button_mob_menu{
+	display: none;
 	background-color: #fff;
 	width: 60px;
 	height: 60px;
@@ -66,7 +67,6 @@ header .button_mob_menu{
 	transform: translateY(-50%);
 	border:3px solid #000;
 	border-radius: 50%;
-	display: flex;
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
@@ -297,6 +297,9 @@ footer ul{
 	}
 	header ul.menu{
 		display: none;
+	}
+	header .button_mob_menu{
+		display: flex;
 	}
 	article .wrapper .about .slider{
 		width: 100%;
