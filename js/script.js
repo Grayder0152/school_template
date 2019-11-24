@@ -13,6 +13,6 @@ $(document).ready(function(){
 	$('.button_mob_menu').click(function(){
 		$(this).toggleClass('active_button_mob_menu')
 		$('.button_mob_menu span').toggleClass('rotate')
-		$('.mob_menu').slideToggle(1000)
+		$('.mob_menu').slideToggle(500)
 	})
 })
